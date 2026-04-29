@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Markdown Previewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Live Markdown Previewer</h1>
+    </header>
+    <main class="container">
+        <div class="editor-pane">
+            <h2>Markdown Input</h2>
+            <textarea id="markdown-input" placeholder="Type your markdown here..."></textarea>
+        </div>
+        <div class="preview-pane">
+            <h2>HTML Preview</h2>
+            <div id="html-preview" class="content-body"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
