@@ -29,8 +29,7 @@ pipeline {
         stage('Verify') {
             steps {
                 echo 'Running unit tests inside container...'
-                // Added --passWithNoTests so the pipeline doesn't fail if tests are missing
-                sh "docker run --rm ${IMAGE_NAME} npm test -- --passWithNoTests"
+                sh "docker run --rm ${IMAGE_NAME} npm test"
             }
         }
         
