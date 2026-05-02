@@ -18,7 +18,8 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/luccab03/cis4930.git'
             }
         }
-
+        
+// Configured automated container build process using project Dockerfile
         stage('Build') {
             steps {
                 echo 'Building Docker image...'
