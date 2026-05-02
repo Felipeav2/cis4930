@@ -15,7 +15,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out source code...'
-                git branch: 'main', url: 'https://github.com/Felipeav2/cis4930.git'
+                git branch: 'main', url: 'https://github.com/luccab03/cis4930.git'
             }
         }
 
