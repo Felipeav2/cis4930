@@ -10,7 +10,7 @@ pipeline {
         // Ensure this ID matches what you saved in Jenkins Credentials
         SSH_CRED_ID = '20031004' 
     }
-
+ 
     stages {
         stage('Checkout') {
             steps {
