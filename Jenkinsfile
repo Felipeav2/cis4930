@@ -27,7 +27,7 @@ pipeline {
             }
         }
 
-        stage('Verify') {
+        stage('Verify') { // Configured verification: unit tests execution
             steps {
                 echo 'Running unit tests inside container...'
                 sh "docker run --rm ${IMAGE_NAME} npm test"
